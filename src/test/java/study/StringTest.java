@@ -24,6 +24,7 @@ public class StringTest {
         assertThat(actual).containsExactly("1", "2");
     }
 
+
     @Test
     @DisplayName("1,을 ,로 split 했을 때 1을 반환")
     void splitOneString() {
