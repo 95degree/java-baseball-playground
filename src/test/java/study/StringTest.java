@@ -15,7 +15,6 @@ public class StringTest {
         String actual = "abc".replace("b", "d");
         assertThat(actual).isEqualTo("adc");
     }
-
     @Test
     @DisplayName("1,2을 ,로 split 했을 때 1과 2로 분리")
     void split() {
