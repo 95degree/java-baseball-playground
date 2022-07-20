@@ -33,6 +33,7 @@ class OperatorTest {
     }
 
     @ParameterizedTest
+    @DisplayName("더하기 연산")
     @MethodSource
     void operatePlus(int left, int right, int expected) {
         assertThat(Operator.PLUS.operate(left, right)).isEqualTo(expected);
@@ -46,6 +47,7 @@ class OperatorTest {
     }
 
     @ParameterizedTest
+    @DisplayName("빼기 연산")
     @MethodSource
     void operateMinus(int left, int right, int expected) {
         assertThat(Operator.MINUS.operate(left, right)).isEqualTo(expected);
@@ -59,6 +61,7 @@ class OperatorTest {
     }
 
     @ParameterizedTest
+    @DisplayName("곱하기 연산")
     @MethodSource
     void operateMultiply(int left, int right, int expected) {
         assertThat(Operator.MULTIPLY.operate(left, right)).isEqualTo(expected);
@@ -72,6 +75,7 @@ class OperatorTest {
     }
 
     @ParameterizedTest
+    @DisplayName("나누기 연산")
     @MethodSource
     void operateDivide(int left, int right, int expected) {
         assertThat(Operator.DIVIDE.operate(left, right)).isEqualTo(expected);
