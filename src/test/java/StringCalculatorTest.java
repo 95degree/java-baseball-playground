@@ -29,5 +29,4 @@ class StringCalculatorTest {
                 Arguments.arguments(new String[]{"2", "*", "3", "*", "4","/","4"},6),
                 Arguments.arguments(new String[]{"11", "-", "3", "*", "10"},80));
     }
-
 }
